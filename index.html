@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBR BET vs PlayUZU - Comparativa Definitiva 2025</title>
+    <title>BBR BET vs PlayUZU - Comparativa de Casinos Online en Perú</title>
     <style>
         :root {
             --bbrbet-color: #0d47a1;
-            --bbrbet-secondary: #1976d2;
+            --bbrbet-light: #4791db;
+            --bbrbet-dark: #002171;
             --playuzu-color: #6a1b9a;
-            --playuzu-secondary: #9c27b0;
+            --playuzu-light: #9c4dcc;
+            --playuzu-dark: #38006b;
             --gold: #ffd700;
-            --silver: #c0c0c0;
-            --dark-color: #212121;
-            --light-color: #f5f5f5;
-            --light-gray: #f0f2f5;
             --white: #ffffff;
-            --border-radius: 10px;
-            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #424242;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
         
         body {
             background-color: var(--light-gray);
-            color: var(--dark-color);
+            color: var(--dark-gray);
             line-height: 1.6;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
         
         header {
-            background: linear-gradient(to right, var(--bbrbet-color), var(--playuzu-color));
+            background: linear-gradient(135deg, var(--bbrbet-color), var(--playuzu-color));
             color: white;
-            padding: 30px 0;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
             position: relative;
             overflow: hidden;
         }
@@ -57,491 +62,69 @@
             background-image: url('/api/placeholder/1200/300');
             background-size: cover;
             background-position: center;
-            opacity: 0.15;
-            z-index: 1;
+            opacity: 0.1;
+            z-index: 0;
         }
         
         .header-content {
             position: relative;
-            z-index: 2;
-            text-align: center;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 20px;
         }
         
         .logo-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         
         .logo {
-            padding: 0 30px;
             text-align: center;
+            margin: 0 40px;
         }
         
-        .logo h1 {
-            font-size: 3rem;
-            font-weight: 800;
+        .logo h2 {
+            font-size: 2.5rem;
+            color: var(--gold);
             margin-bottom: 5px;
-            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
         
-        .logo.bbrbet h1 {
-            color: var(--gold);
-        }
-        
-        .logo.playuzu h1 {
-            color: var(--gold);
-        }
-        
-        .logo span {
-            font-size: 1.2rem;
+        .logo p {
+            font-size: 1rem;
             color: var(--white);
-            font-weight: 300;
+            opacity: 0.9;
         }
         
-        .vs-badge {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
+        .vs-circle {
             width: 60px;
             height: 60px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 20px;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
         }
         
-        .header-tagline {
-            font-size: 1.5rem;
-            margin-top: 20px;
-            font-weight: 300;
-        }
-        
-        .cta-buttons {
+        .register-buttons {
             display: flex;
             justify-content: center;
             gap: 30px;
             margin-top: 30px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .cta-button::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: 0.5s;
-            z-index: -1;
-        }
-        
-        .cta-button:hover::after {
-            left: 100%;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .cta-button.bbrbet {
-            background-color: var(--bbrbet-color);
-            color: white;
-            border: 2px solid var(--gold);
-            box-shadow: 0 5px 15px rgba(13, 71, 161, 0.3);
-            animation: pulse-blue 2s infinite;
-        }
-        
-        .cta-button.playuzu {
-            background-color: var(--playuzu-color);
-            color: white;
-            border: 2px solid var(--gold);
-            box-shadow: 0 5px 15px rgba(106, 27, 154, 0.3);
-            animation: pulse-purple 2s infinite;
-        }
-        
-        @keyframes pulse-blue {
-            0% {
-                box-shadow: 0 0 0 0 rgba(13, 71, 161, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 10px rgba(13, 71, 161, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(13, 71, 161, 0);
-            }
-        }
-        
-        @keyframes pulse-purple {
-            0% {
-                box-shadow: 0 0 0 0 rgba(106, 27, 154, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 10px rgba(106, 27, 154, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(106, 27, 154, 0);
-            }
-        }
-        
-        .main-content {
-            padding: 60px 0;
-        }
-        
-        .intro-text {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            padding: 30px;
-            margin-bottom: 50px;
-            box-shadow: var(--box-shadow);
-            text-align: center;
-        }
-        
-        .intro-text h2 {
-            color: var(--dark-color);
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-        
-        .intro-text p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        .section-title h2 {
-            font-size: 2.2rem;
-            display: inline-block;
-            background-color: var(--light-gray);
-            padding: 0 20px;
-            position: relative;
-            z-index: 1;
-            background-image: linear-gradient(to right, var(--bbrbet-color), var(--playuzu-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #ddd;
-            z-index: 0;
-        }
-        
-        .comparison-table-wrapper {
-            overflow-x: auto;
-            margin-bottom: 50px;
-        }
-        
-        .comparison-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            background-color: var(--white);
-        }
-        
-        .comparison-table tr.feature-category {
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-        
-        .comparison-table tr.feature-category td {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-            color: #666;
-            padding: 15px 20px;
-        }
-        
-        .comparison-table th {
-            text-align: left;
-            padding: 20px;
-            background-color: var(--dark-color);
-            color: white;
-            font-size: 1.1rem;
-        }
-        
-        .comparison-table th.casino-header {
-            text-align: center;
-            font-size: 1.3rem;
-            padding: 25px 20px;
-        }
-        
-        .comparison-table th.feature-head {
-            width: 25%;
-        }
-        
-        .comparison-table th.bbrbet-header {
-            background-color: var(--bbrbet-color);
-            width: 37.5%;
-        }
-        
-        .comparison-table th.playuzu-header {
-            background-color: var(--playuzu-color);
-            width: 37.5%;
-        }
-        
-        .comparison-table td {
-            padding: 15px 20px;
-            border-bottom: 1px solid #eee;
-            vertical-align: middle;
-        }
-        
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .comparison-table td.feature-name {
-            font-weight: 600;
-            color: #444;
-        }
-        
-        .winner {
-            position: relative;
-        }
-        
-        .winner::after {
-            content: '✓ MEJOR';
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: var(--gold);
-            color: var(--dark-color);
-            font-size: 0.7rem;
-            font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
-        
-        .highlight {
-            font-weight: 700;
-            color: #1976d2;
-        }
-        
-        .highlight-purple {
-            font-weight: 700;
-            color: #9c27b0;
-        }
-        
-        .check-icon {
-            color: #4caf50;
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-        
-        .cross-icon {
-            color: #f44336;
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-        
-        .rating {
-            display: flex;
-            justify-content: flex-start;
-            margin-top: 5px;
-        }
-        
-        .star {
-            color: var(--gold);
-            font-size: 1.2rem;
-            margin-right: 2px;
-        }
-        
-        .star.empty {
-            color: #e0e0e0;
-        }
-        
-        .casino-cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin: 50px 0;
-        }
-        
-        .casino-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .casino-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .casino-card-header {
-            padding: 30px;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        
-        .casino-card-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('/api/placeholder/600/200');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.15;
-            z-index: 0;
-        }
-        
-        .casino-card-header-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .casino-card.bbrbet .casino-card-header {
-            background: linear-gradient(135deg, var(--bbrbet-color), var(--bbrbet-secondary));
-        }
-        
-        .casino-card.playuzu .casino-card-header {
-            background: linear-gradient(135deg, var(--playuzu-color), var(--playuzu-secondary));
-        }
-        
-        .casino-logo {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 5px;
-            color: var(--gold);
-            letter-spacing: 1px;
-        }
-        
-        .casino-tagline {
-            font-size: 1rem;
-            margin-bottom: 15px;
-            opacity: 0.9;
-        }
-        
-        .casino-card-body {
-            padding: 30px;
-        }
-        
-        .casino-info {
-            margin-bottom: 25px;
-        }
-        
-        .casino-info h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #eee;
-        }
-        
-        .bbrbet .casino-info h3 {
-            color: var(--bbrbet-color);
-        }
-        
-        .playuzu .casino-info h3 {
-            color: var(--playuzu-color);
-        }
-        
-        .casino-features {
-            list-style: none;
-        }
-        
-        .casino-features li {
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-        }
-        
-        .feature-icon {
-            margin-right: 10px;
-            font-weight: bold;
-        }
-        
-        .bbrbet .feature-icon {
-            color: var(--bbrbet-color);
-        }
-        
-        .playuzu .feature-icon {
-            color: var(--playuzu-color);
-        }
-        
-        .casino-bonuses {
-            background-color: rgba(0, 0, 0, 0.02);
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-        }
-        
-        .casino-bonuses h4 {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
-        .bbrbet .casino-bonuses h4 {
-            color: var(--bbrbet-color);
-        }
-        
-        .playuzu .casino-bonuses h4 {
-            color: var(--playuzu-color);
-        }
-        
-        .bonus-item {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed #ddd;
-        }
-        
-        .bonus-item:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-        
-        .bonus-title {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .bonus-description {
-            font-size: 0.9rem;
-            color: #666;
-        }
-        
-        .casino-card-footer {
-            padding: 25px;
-            text-align: center;
-            background-color: #f9f9f9;
         }
         
         .register-button {
@@ -554,208 +137,256 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
-            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--gold);
+            animation: pulse 2s infinite;
         }
         
         .register-button.bbrbet {
             background-color: var(--bbrbet-color);
             color: white;
-            box-shadow: 0 5px 15px rgba(13, 71, 161, 0.3);
         }
         
         .register-button.playuzu {
             background-color: var(--playuzu-color);
             color: white;
-            box-shadow: 0 5px 15px rgba(106, 27, 154, 0.3);
         }
         
         .register-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
         
-        .pros-cons-section {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin: 50px 0;
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
         }
         
-        .pros-cons-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
+        .intro-text {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .intro-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+        
+        .intro-text p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 40px 0 30px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            display: inline-block;
+            background-color: var(--light-gray);
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+            background-image: linear-gradient(90deg, var(--bbrbet-color), var(--playuzu-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--medium-gray);
+            z-index: 0;
+        }
+        
+        .comparison-table-container {
+            margin-bottom: 40px;
+            overflow-x: auto;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--box-shadow);
+            background-color: white;
         }
         
-        .pros-cons-header {
-            padding: 20px;
-            text-align: center;
-            color: white;
+        .comparison-table th, 
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--medium-gray);
         }
         
-        .bbrbet-pros .pros-cons-header {
-            background-color: var(--bbrbet-color);
-        }
-        
-        .bbrbet-cons .pros-cons-header {
-            background-color: #e53935;
-        }
-        
-        .playuzu-pros .pros-cons-header {
-            background-color: var(--playuzu-color);
-        }
-        
-        .playuzu-cons .pros-cons-header {
-            background-color: #e53935;
-        }
-        
-        .pros-cons-header h3 {
-            margin: 0;
-            font-size: 1.3rem;
-        }
-        
-        .pros-cons-body {
-            padding: 25px;
-        }
-        
-        .pros-cons-list {
-            list-style: none;
-        }
-        
-        .pros-cons-list li {
-            padding: 10px 0;
-            display: flex;
-            align-items: flex-start;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        .pros-cons-list li:last-child {
+        .comparison-table tr:last-child td {
             border-bottom: none;
         }
         
-        .pros-cons-icon {
-            margin-right: 10px;
-            margin-top: 2px;
-        }
-        
-        .pros-icon {
-            color: #4caf50;
-        }
-        
-        .cons-icon {
-            color: #e53935;
-        }
-        
-        .conclusion-section {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            padding: 40px;
-            margin-top: 50px;
-            box-shadow: var(--box-shadow);
-            text-align: center;
-        }
-        
-        .conclusion-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--dark-color);
-        }
-        
-        .conclusion-section p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        
-        .verdict-badges {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .verdict-badge {
-            background-color: var(--white);
-            padding: 15px 30px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        
-        .verdict-badge h4 {
-            margin-bottom: 10px;
+        .comparison-table th {
+            background-color: var(--dark-gray);
+            color: white;
+            font-weight: 600;
             font-size: 1.1rem;
         }
         
-        .verdict-badge p {
+        .comparison-table th.casino-header {
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 20px 15px;
+        }
+        
+        .comparison-table th.bbrbet-header {
+            background-color: var(--bbrbet-color);
+        }
+        
+        .comparison-table th.playuzu-header {
+            background-color: var(--playuzu-color);
+        }
+        
+        .comparison-table th.feature-header {
+            width: 25%;
+        }
+        
+        .comparison-table th.casino-header {
+            width: 37.5%;
+        }
+        
+        .comparison-table td.feature-name {
+            font-weight: 600;
+            vertical-align: top;
+        }
+        
+        .comparison-table tr.section-header td {
+            background-color: rgba(0, 0, 0, 0.05);
             font-weight: 700;
-            margin: 0;
-            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            color: #555;
         }
         
-        .verdict-badge.bbrbet h4 {
+        .check-icon,
+        .cross-icon {
+            font-size: 1.2rem;
+            text-align: center;
+            display: block;
+        }
+        
+        .check-icon {
+            color: var(--success);
+        }
+        
+        .cross-icon {
+            color: var(--danger);
+        }
+        
+        .neutral-icon {
+            color: var(--warning);
+        }
+        
+        .highlight {
+            position: relative;
+            font-weight: 700;
+        }
+        
+        .highlight.bbrbet {
             color: var(--bbrbet-color);
         }
         
-        .verdict-badge.playuzu h4 {
+        .highlight.playuzu {
             color: var(--playuzu-color);
         }
         
-        .final-cta {
-            margin-top: 40px;
-        }
-        
-        .final-cta-button {
+        .badge {
             display: inline-block;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 0.7rem;
             font-weight: 700;
-            font-size: 1.3rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            background: linear-gradient(to right, var(--bbrbet-color), var(--playuzu-color));
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        
+        .badge.winner {
+            background-color: var(--gold);
+            color: black;
+        }
+        
+        .badge.official {
+            background-color: var(--success);
             color: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            border: 2px solid var(--gold);
-            animation: pulse-multi 2s infinite;
         }
         
-        @keyframes pulse-multi {
-            0% {
-                box-shadow: 0 0 0 0 rgba(13, 71, 161, 0.7), 0 0 0 0 rgba(106, 27, 154, 0.7);
-            }
-            40% {
-                box-shadow: 0 0 0 10px rgba(13, 71, 161, 0), 0 0 0 0 rgba(106, 27, 154, 0.7);
-            }
-            80% {
-                box-shadow: 0 0 0 10px rgba(13, 71, 161, 0), 0 0 0 10px rgba(106, 27, 154, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(13, 71, 161, 0), 0 0 0 0 rgba(106, 27, 154, 0);
-            }
+        .badge.premium {
+            background-color: var(--playuzu-color);
+            color: white;
         }
         
-        .final-cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        .rating {
+            display: flex;
+            margin-top: 5px;
         }
         
-        footer {
-            background-color: var(--dark-color);
+        .star {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-right: 2px;
+        }
+        
+        .star.empty {
+            color: var(--medium-gray);
+        }
+        
+        .footer {
+            background-color: var(--dark-gray);
             color: white;
             padding: 40px 0;
-            margin-top: 60px;
             text-align: center;
+            margin-top: 50px;
         }
         
-        .footer-disclaimer {
+        .disclaimer {
             max-width: 800px;
             margin: 20px auto 0;
             font-size: 0.9rem;
-            color: #aaa;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .warning-banner {
+            background-color: #fff3e0;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-banner p {
+            color: #e65100;
+            font-weight: 500;
         }
         
         @media (max-width: 768px) {
@@ -763,39 +394,23 @@
                 flex-direction: column;
             }
             
-            .logo {
-                margin-bottom: 15px;
+            .vs-circle {
+                margin: 20px 0;
             }
             
-            .vs-badge {
-                margin: 10px 0;
-            }
-            
-            .cta-buttons {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .casino-cards {
-                grid-template-columns: 1fr;
-            }
-            
-            .pros-cons-section {
-                grid-template-columns: 1fr;
-            }
-            
-            .verdict-badges {
+            .register-buttons {
                 flex-direction: column;
                 gap: 15px;
             }
             
             .comparison-table th,
             .comparison-table td {
-                padding: 15px 10px;
+                padding: 10px;
                 font-size: 0.9rem;
             }
             
             .comparison-table th.casino-header {
+                padding: 15px 10px;
                 font-size: 1.1rem;
             }
         }
@@ -804,27 +419,26 @@
 <body>
     <header>
         <div class="header-content">
+            <h1>BBR BET vs PlayUZU</h1>
+            <p class="subtitle">Comparativa completa de los mejores casinos online en Perú</p>
+            
             <div class="logo-container">
-                <div class="logo bbrbet">
-                    <h1>BBR BET</h1>
-                    <span>Tu Casino de Confianza</span>
+                <div class="logo">
+                    <h2>BBR BET</h2>
+                    <p>Tu destino de juegos</p>
                 </div>
                 
-                <div class="vs-badge">VS</div>
+                <div class="vs-circle">VS</div>
                 
-                <div class="logo playuzu">
-                    <h1>PlayUZU</h1>
-                    <span>El Casino Oficial de Perú</span>
+                <div class="logo">
+                    <h2>PlayUZU</h2>
+                    <p>El casino oficial de Perú</p>
                 </div>
             </div>
             
-            <div class="header-tagline">
-                Comparativa completa - ¿Cuál es el mejor casino online para ti?
-            </div>
-            
-            <div class="cta-buttons">
-                <a href="https://www.bbrbet.com" class="cta-button bbrbet" id="bbrButton">REGISTRARSE EN BBR BET</a>
-                <a href="https://sign.zurkano.com/?mid=259337_1525246" class="cta-button playuzu" id="uzuButton">REGISTRARSE EN PLAYUZU</a>
+            <div class="register-buttons">
+                <a href="https://www.bbrbet.com" class="register-button bbrbet" id="bbrButton">JUGAR EN BBR BET</a>
+                <a href="https://sign.zurkano.com/?mid=259337_1525246" class="register-button playuzu" id="uzuButton">JUGAR EN PLAYUZU</a>
             </div>
         </div>
     </header>
@@ -835,97 +449,342 @@
             const bbrButton = document.getElementById('bbrButton');
             const uzuButton = document.getElementById('uzuButton');
             
-            function toggleBBRButtonVisibility() {
-                if(bbrButton.style.opacity === '1' || bbrButton.style.opacity === '') {
-                    bbrButton.style.opacity = '0.5';
+            function toggleButtonVisibility(button) {
+                if(button.style.opacity === '1' || button.style.opacity === '') {
+                    button.style.opacity = '0.5';
                 } else {
-                    bbrButton.style.opacity = '1';
+                    button.style.opacity = '1';
                 }
             }
             
-            function toggleUZUButtonVisibility() {
-                if(uzuButton.style.opacity === '1' || uzuButton.style.opacity === '') {
-                    uzuButton.style.opacity = '0.5';
-                } else {
-                    uzuButton.style.opacity = '1';
-                }
-            }
-            
-            setInterval(toggleBBRButtonVisibility, 800);
-            setInterval(toggleUZUButtonVisibility, 800);
+            setInterval(() => toggleButtonVisibility(bbrButton), 800);
+            setInterval(() => toggleButtonVisibility(uzuButton), 800);
         });
     </script>
     
-    <div class="main-content">
-        <div class="container">
-            <div class="intro-text">
-                <h2>BBR BET vs PlayUZU: ¿Cuál es el Mejor Casino Online en Perú?</h2>
-                <p>Hemos analizado detalladamente estos dos populares casinos online para ofrecer una comparativa completa y objetiva. Descubre cuál se adapta mejor a tus necesidades, ya sea que busques los mejores bonos, mayor variedad de juegos, retiros más rápidos o la mejor experiencia de juego en general.</p>
-            </div>
-            
-            <div class="section-title">
-                <h2>Comparativa Detallada</h2>
-            </div>
-            
-            <div class="comparison-table-wrapper">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th class="feature-head">Características</th>
-                            <th class="casino-header bbrbet-header">BBR BET</th>
-                            <th class="casino-header playuzu-header">PlayUZU</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="feature-category">
-                            <td colspan="3">INFORMACIÓN GENERAL</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Operador</td>
-                            <td>BBRWIN Limitada</td>
-                            <td>Skill On Net S.A.C.</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Licencia</td>
-                            <td>Gobierno de Anjouan (Comoras)<br>Licencia №3-102-899560</td>
-                            <td class="winner">MINCETUR Perú<br>Registro: 11002613010000</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Año de operación</td>
-                            <td>2023</td>
-                            <td>2025</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Domicilio legal</td>
-                            <td>Av. Pastor Diaz, Provincia de Puntarenas, Jaco, 61101, Costa Rica</td>
-                            <td>Av. José Larco 1232 Of. 09-104, Miraflores, Lima</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Valoración general</td>
-                            <td>
-                                <div class="rating">
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                    <div class="star empty">★</div>
-                                </div>
-                                4.0/5
-                            </td>
-                            <td class="winner">
-                                <div class="rating">
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                    <div class="star">★</div>
-                                </div>
-                                5.0/5
-                            </td>
-                        </tr>
-                        
-                        <tr class="feature-category">
-                            <td colspan="3">BONOS Y PROMOCIONES</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Bono de
+    <div class="container">
+        <div class="intro-text">
+            <h2>Conoce las diferencias entre BBR BET y PlayUZU</h2>
+            <p>Hemos preparado una comparativa detallada de estos dos populares casinos online para jugadores peruanos. Analizamos la licencia, juegos disponibles, bonos, métodos de pago y mucho más para ayudarte a elegir la mejor opción según tus preferencias.</p>
+        </div>
+        
+        <div class="warning-banner">
+            <p>⚠️ "Los juegos y apuestas deportivas a distancia realizados en exceso pueden causar ludopatía." Juega con responsabilidad.</p>
+        </div>
+        
+        <div class="section-title">
+            <h2>Comparativa Detallada</h2>
+        </div>
+        
+        <div class="comparison-table-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th class="feature-header"></th>
+                        <th class="casino-header bbrbet-header">BBR BET</th>
+                        <th class="casino-header playuzu-header">PlayUZU</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- INFORMACIÓN GENERAL -->
+                    <tr class="section-header">
+                        <td colspan="3">INFORMACIÓN GENERAL</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Operador</td>
+                        <td>BBRWIN Limitada</td>
+                        <td>Skill On Net S.A.C.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Licencia</td>
+                        <td>Gobierno de Anjouan (Comoras)<br>Licencia №3-102-899560</td>
+                        <td><span class="highlight playuzu">MINCETUR Perú</span><br>Código: 11002613010000 <span class="badge official">Oficial</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Domicilio legal</td>
+                        <td>Av. Pastor Diaz, Provincia de Puntarenas, Jaco, 61101, Costa Rica</td>
+                        <td>Av. José Larco 1232 Of. 09-104, Miraflores, Lima, Perú</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">RUC/Registro</td>
+                        <td>ALSI-112405011-FI1</td>
+                        <td>20611272601</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Año de operación</td>
+                        <td>2023</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Sitio web</td>
+                        <td>bbrbet.com</td>
+                        <td>PlayUZU.pe</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Valoración general</td>
+                        <td>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                            </div>
+                            4.0/5
+                        </td>
+                        <td>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            5.0/5 <span class="badge winner">Mejor</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- JUEGOS DISPONIBLES -->
+                    <tr class="section-header">
+                        <td colspan="3">JUEGOS DISPONIBLES</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Categorías de juegos</td>
+                        <td>
+                            • Clásicos de casino<br>
+                            • Slots y juegos de arcade<br>
+                            • Live casino<br>
+                            • Crash games y mini-juegos<br>
+                            • Deportes virtuales y juegos de pesca
+                        </td>
+                        <td>
+                            • Slots<br>
+                            • Ruleta<br>
+                            • Blackjack<br>
+                            • Casino en vivo<br>
+                            • Jackpots<br>
+                            • Juegos de casino<br>
+                            • Otros
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Slots populares</td>
+                        <td>
+                            • Fortune Rabbit<br>
+                            • Lucky Neko<br>
+                            • Dragon Hatch<br>
+                            • Wild Bandito
+                        </td>
+                        <td>
+                            • Zeus vs Hades Gods of War<br>
+                            • Madame Destiny Megaways<br>
+                            • Book of Dead<br>
+                            • Wolf Gold<br>
+                            • Jammin Jars<br>
+                            • Sugar Rush
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Casino en vivo</td>
+                        <td>
+                            • Crazy Time<br>
+                            • MONOPOLY Live<br>
+                            • Lightning Dice
+                        </td>
+                        <td>
+                            <span class="highlight playuzu">Más de 100 mesas en vivo 24/7</span><br>
+                            • Dream Catcher<br>
+                            • Monopoly Live<br>
+                            • Gonzo's Quest
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Juegos con Jackpot</td>
+                        <td>Disponible (cantidad limitada)</td>
+                        <td><span class="highlight playuzu">Más de 200 juegos con jackpots</span> <span class="badge winner">Mejor</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Crash games</td>
+                        <td>
+                            <span class="highlight bbrbet">Amplia selección</span><br>
+                            • Mines<br>
+                            • Crash<br>
+                            • Plinko<br>
+                            • Dice<br>
+                            • Limbo
+                        </td>
+                        <td>Selección limitada</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Jackpot más alto</td>
+                        <td>No especificado</td>
+                        <td>S/ 98,023,920</td>
+                    </tr>
+                    
+                    <!-- BONOS Y PROMOCIONES -->
+                    <tr class="section-header">
+                        <td colspan="3">BONOS Y PROMOCIONES</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Bono de bienvenida</td>
+                        <td>Bono por registro y primer depósito (detalles no especificados)</td>
+                        <td>
+                            <span class="highlight playuzu">50 giros gratis con el primer depósito</span><br>
+                            • Valor: S/0.30 en Zeus vs Hades<br>
+                            • Depósito mínimo: S/20<br>
+                            • Sin máximo de ganancias
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Requisitos de apuesta</td>
+                        <td>Altos (varía según promoción)</td>
+                        <td><span class="highlight playuzu">Sin requisitos de apuesta</span> <span class="badge winner">Único</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Promociones especiales</td>
+                        <td>
+                            • Disponibles en sección "Promoções"<br>
+                            • Detalles limitados
+                        </td>
+                        <td>
+                            • <span class="highlight playuzu">Sorpresas diarias</span><br>
+                            • Torneos de slots en vivo<br>
+                            • UZUplus (reembolso de dinero)<br>
+                            • La Rueda UZU<br>
+                            • Prize Twister<br>
+                            • Hot or Cold
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Programa VIP</td>
+                        <td>
+                            • Disponible<br>
+                            • Reduce comisiones de retiro según nivel
+                        </td>
+                        <td>
+                            <span class="highlight playuzu">Club de Celebridades</span><br>
+                            • Gerente dedicado<br>
+                            • Límites más altos<br>
+                            • Retiros más rápidos<br>
+                            • Regalos exclusivos<br>
+                            • Sistema por invitación
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Cashback/Reembolso</td>
+                        <td>No especificado</td>
+                        <td>
+                            <span class="highlight playuzu">UZUplus:</span><br>
+                            • Reembolso en cada apuesta<br>
+                            • Sin restricciones ni límites<br>
+                            • Incremento de pagos del 96.4% al 97%<br>
+                            • Disponible en todos los juegos
+                        </td>
+                    </tr>
+                    
+                    <!-- BANCA Y PAGOS -->
+                    <tr class="section-header">
+                        <td colspan="3">BANCA Y PAGOS</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Depósito mínimo</td>
+                        <td>Varía según método</td>
+                        <td>S/ 20</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Retiro mínimo</td>
+                        <td>Varía según método</td>
+                        <td><span class="highlight playuzu">S/ 0 (sin mínimo)</span> <span class="badge winner">Único</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Métodos de pago</td>
+                        <td>
+                            • Transferencias bancarias<br>
+                            • Pix<br>
+                            • Tarjetas de crédito/débito
+                        </td>
+                        <td>
+                            • PAGO EFFECTIVO<br>
+                            • BCP<br>
+                            • Caja Cusco<br>
+                            • Caja Huancayo<br>
+                            • BBVA<br>
+                            • INTERBANK<br>
+                            • Visa<br>
+                            • MasterCard<br>
+                            • Prontopaga QR<br>
+                            • Yape
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Velocidad de retiro</td>
+                        <td>
+                            • Transferencia: hasta 3 días<br>
+                            • Tarjetas: desde 5 minutos hasta 3 días
+                        </td>
+                        <td>Rápido (24-48 horas)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Comisiones</td>
+                        <td>Comisión en retiros (varía según nivel VIP)</td>
+                        <td>Sin comisiones</td>
+                    </tr>
+                    
+                    <!-- PLATAFORMA Y SOPORTE -->
+                    <tr class="section-header">
+                        <td colspan="3">PLATAFORMA Y SOPORTE</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Atención al cliente</td>
+                        <td>
+                            • Chat de soporte<br>
+                            • Email: bbrwinteam@gmail.com, bbrbet1@gmail.com
+                        </td>
+                        <td>
+                            • Correo electrónico<br>
+                            • Chat en vivo 24/7 (requiere login)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Versión móvil</td>
+                        <td>Disponible</td>
+                        <td>Optimizada para dispositivos móviles</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Herramientas de juego responsable</td>
+                        <td>Limitadas</td>
+                        <td>
+                            • Notificaciones de tiempo<br>
+                            • Límites de depósito<br>
+                            • Enlace al Registro de Personas Prohibidas del MINCETUR
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Idiomas disponibles</td>
+                        <td>Portugués, Español</td>
+                        <td>Español</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Estadísticas de pagos</td>
+                        <td>No especificado</td>
+                        <td>
+                            • Premios totales: S/ 2,241,546 (Feb. 2025)<br>
+                            • Premio más alto: S/ 49,676<br>
+                            • UZUplus cobrado: S/ 1,536
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="warning-banner">
+            <p>⚠️ Recuerda que BBR BET opera con una licencia de Anjouan (Comoras), que no es considerada una jurisdicción reguladora confiable en la industria del juego en línea. PlayUZU cuenta con licencia oficial del MINCETUR Perú.</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2025 - Comparativa de Casinos Online en Perú</p>
+        <p class="disclaimer">Esta información se proporciona solo con fines informativos. Recomendamos investigar más antes de registrarse en cualquier casino online. Juegue con responsabilidad.</p>
+    </footer>
+</body>
+</html>
